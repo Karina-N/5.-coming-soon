@@ -35,14 +35,14 @@
             .left-column {
                 display: inline-block;
                 width: 50%;
-                
+                background-color: blue;
                 float: left;
             }
 
             .right-column {
                 display: inline-block;
-                WIDTH: 40%;
-                
+                width: 40%;
+                background-color: yellow;
                 float: right;
             }
 
@@ -61,6 +61,60 @@
                 
             }
 
+            /* dizaina adaptuosim mazesniam ekrano plociui,
+                mazesniam prietaisui. */
+ 
+        @media (max-width: 1100px) {
 
+            .rows {
+                width: 800px;
+                margin-left: calc((100% - 800px) / 2);
+            }
+            
+        }
 
+        @media (max-width: 900px) {
 
+            .rows {
+                width: 600px;
+                margin-left: calc((100% - 600px) / 2);
+            }
+            
+            .left-column {
+                width: 100%;
+                margin-bottom: 60px;
+            }
+
+            .right-column {
+                width: 100%;
+            }
+        } 
+        
+        @media (max-width: 700px) {
+            .hero-row,
+            .rows,
+            .footer-texts {
+                width: 400px;
+                margin-left: calc((100% - 400px) / 2);
+                
+            }
+            
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                    padding-left: 20px;
+                    padding-right: 20px;
+            }
+            .hero-row {
+                width: 100%;
+                margin-left: 0px;
+            }
+            .rows {
+                width: 100%;
+                margin-left: 0px;
+            }
+
+        }
+
+        /*  paskutinis dydis kuriam reikia pritaikyti yra width 320px */
