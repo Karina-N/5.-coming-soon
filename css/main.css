@@ -68,6 +68,7 @@
             display: inline-block;
             width: 1000px;
             margin-left: calc((100% - 1000px) / 2);
+            margin-right: calc((100% - 1000px) / 2);
             
         }
 
@@ -96,74 +97,157 @@
                     margin-bottom: 15px;
                 }
             
+        footer.container {
+            text-align: center;
+            padding-top: 0px;
+        }
+        
             .socials {
                 display: inline-block;
                 width: 100%;
                 border-bottom: 1px solid white;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 
             }
+
+            .socials > .fa {
+                /* padding: 20px; */
+                color: white;
+                text-decoration: none;
+                line-height: 40px;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin: 5px;
+
+            }
+
+            .socials > .fa:hover {
+                background-color: white;
+                color: #03A9F5;
+            }
+
 
             .footer-texts {
                 display: inline-block;
                 width: 600px;
-                margin-left: calc((100% - 600px) / 2);
+                /* margin-left: calc((100% - 600px) / 2); */
+                color: #fff8;
+                font-size: 16px;
                 
             }
+    
+
+            .footer-texts > .logo {
+                height: 30px;
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+
+            .copyright {
+                display: inline-block;
+                
+            }
+
+                .copyright > .texts {
+                    display: inline-block;
+                    float: left;
+
+                }
+
+                .copyright > .texts.borders {
+                    display: inline-block;
+                    border-left: 1px solid white;
+                    border-right: 1px solid white;
+                    margin: 0 10px;
+                    padding: 0 10px;
+                }
+
+
+            .footer-texts > p {
+                display: inline-block;
+                width: 100%;
+
+            }
+
+            .footer-texts a {
+                color: white;
+                text-decoration: none;
+
+            }
+
+
+
+            
 
             /* dizaina adaptuosim mazesniam ekrano plociui,
                 mazesniam prietaisui. */
  
-        @media (max-width: 1100px) {
+                @media (max-width: 1100px) {
 
-            .rows {
-                width: 800px;
-                margin-left: calc((100% - 800px) / 2);
-            }
-            
-        }
-
-        @media (max-width: 900px) {
-
-            .rows {
-                width: 600px;
-                margin-left: calc((100% - 600px) / 2);
-            }
-            
-            .left-column {
-                width: 100%;
-                margin-bottom: 60px;
-            }
-
-            .right-column {
-                width: 100%;
-            }
-        } 
+                    .rows {
+                        width: 800px;
+                        margin-left: calc((100% - 800px) / 2);
+                        margin-right: calc((100% - 800px) / 2);
+                    }
+                    
+                }
         
-        @media (max-width: 700px) {
-            .hero-row,
-            .rows,
-            .footer-texts {
-                width: 400px;
-                margin-left: calc((100% - 400px) / 2);
+                @media (max-width: 900px) {
+        
+                    .rows {
+                        width: 600px;
+                        margin-left: calc((100% - 600px) / 2);
+                        margin-right: calc((100% - 600px) / 2);
+                    }
+                    
+                    .left-column {
+                        width: 100%;
+                        margin-bottom: 60px;
+                    }
+        
+                    .right-column {
+                        width: 100%;
+                    }
+                } 
                 
-            }
-            
-        }
 
-        @media (max-width: 500px) {
-            .container {
-                    padding-left: 20px;
-                    padding-right: 20px;
-            }
-            .hero-row {
-                width: 100%;
-                margin-left: 0px;
-            }
-            .rows {
-                width: 100%;
-                margin-left: 0px;
-            }
+        
+                @media (max-width: 700px) {
+                    .hero-row,
+                    .rows,
+                    .footer-texts {
+                        width: 400px;
+                        margin-left: calc((100% - 400px) / 2);
+                        margin-right: calc((100% - 400px) / 2);
+                        
+                    }
+                    
+                    .copyright > .texts {
+                        width: 100%;
+                    }
+                    .copyright > .texts.borders {
+                        border: none;
+                        margin: 0px;
+                        
+                    }
 
-        }
+                }
+
+                @media (max-width: 500px) {
+                    .container {
+                            padding-left: 20px;
+                            padding-right: 20px;
+                    }
+                    .hero-row,
+                    .rows
+                    .footer-texts {
+                        width: 100%;
+                        margin-left: 0px;
+                        margin-right: 0px;
+                    }
+
+                }
 
         /*  paskutinis dydis kuriam reikia pritaikyti yra width 320px */
