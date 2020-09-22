@@ -1,26 +1,37 @@
 .clock {
     display: inline-block;
     width: 100%;
-    margin-bottom: 40px;
     font-size: 48px;
-    color: #fff;
+    color: white;
+     
 }
 
-.clock > .time {
+   .clock > .time {
     display: inline-block;
     float: left;
     width: 25%;
+    }
+
+        .clock >  .time > .value {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .clock > .time > .label {
+            display: inline-block;
+            width: 100%;
+            font-size: 18px;
+        }
+
+@media (max-width: 700px) {
+    .clock > .time {
+        width: 50%
+    }
 }
 
-.clock > .time > .value {
-    display: inline-block;
-    width: 100%;
+@media (max-width: 500px) {
+    .clock > .time {
+        width: 100%;
+    }
 }
-
-.clock > .time > .label {
-    display: inline-block;
-    width: 100%;
-    font-size: 18px;
-}
-
 
